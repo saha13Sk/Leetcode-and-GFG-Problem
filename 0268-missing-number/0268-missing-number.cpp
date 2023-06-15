@@ -3,10 +3,10 @@ public:
     int missingNumber(vector<int>& nums) {
         
         int sum = 0;
-        int total = nums.size()*(nums.size() + 1)/2;
-        for (auto number : nums) {
-            sum += number;
+        int total_size = nums.size()*(nums.size() + 1)/2;
+        for (auto it : nums) {
+            sum += it;
         }
-        return total - sum;
+        return total_size - sum;
     }
 };
